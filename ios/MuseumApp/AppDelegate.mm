@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation AppDelegate
 
@@ -8,6 +9,7 @@
 {
   self.moduleName = @"MuseumApp";
   // You can add your custom initial props in the dictionary below.
+  [GMSServices provideAPIKey:@"AIzaSyA0VoRHyldcCJtLpl_ccmFh8xOUXe69cj4"]; // add this line using the api key obtained from Google Console
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
